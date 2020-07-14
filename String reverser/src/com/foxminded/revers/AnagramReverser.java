@@ -29,7 +29,7 @@ public class AnagramReverser {
 	public String reverse(String str) {
 
 		if (str == null) {
-			throw new NullPointerException("Input string can't be null");
+			throw new IllegalArgumentException("Input string can't be null");
 		}
 
 		String[] stringArray = str.split(DEFAULT_DELIMITER);
